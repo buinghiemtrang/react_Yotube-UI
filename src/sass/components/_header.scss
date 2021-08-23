@@ -1,0 +1,125 @@
+.header {
+    @include flex(center, space-between);
+    height: $height-header;
+    padding-left: 40px ;
+    box-shadow: $box-shadow;
+
+    &__logo {
+        img {
+            width: 50px;
+            margin-left: 15px;
+        }
+    }
+
+    i {
+        cursor: pointer;
+        font-size: 1.8rem;
+    }
+
+    &__search {
+        form {
+            height: 40px;
+            display: flex;
+        }
+
+        input {
+            width: 700px;
+            height: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            outline: none;
+        }
+
+        &__key {
+            border: 1px solid #ddd;
+            border-left: 0;
+            padding: 0 15px;
+        }
+
+        &__mic {
+            border: 0;
+            padding: 7px 9px;
+            outline: none;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+    }
+
+    &__icon {
+        position: relative;
+
+        i {
+            padding: 0 20px;
+        }
+        .hide__user__menu {
+            display: block;
+            padding: 10px;
+            padding-top: 20px;
+            position: absolute;
+            top: 40px;
+            right: 10%;
+            background-color: #34495e;
+            cursor: pointer;
+            z-index: 99;
+        }
+        
+        .user__menu {
+                display: none;
+            
+            &__img {
+                display: grid;
+                grid-template-columns: 30% 70%;
+                margin-bottom: 10px;
+                img {
+                    width: 50px;
+                }
+
+                &__info {
+                    h3 {
+                        font-size: 17px;
+                    }
+                    h5 {
+                        color: rgb(62, 120, 207);
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            &__section {
+                display: grid;
+                grid-template-columns: 15% 85%;
+                gap: 5px;
+                padding: 15px 0;
+                text-align: left;
+
+                &__icon i{
+                    font-size: 26px;
+                    padding: 0;
+                }
+
+                &__title {
+                    p {
+                        margin-bottom: 5px;
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            &__bot {
+                display: grid;
+                grid-template-columns: 80% 20%;
+                gap: 5px;
+                padding: 15px 0 0;
+                text-align: left;
+
+                i{
+                    font-size: 20px;
+                }
+                p {
+                    margin-bottom: 5px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

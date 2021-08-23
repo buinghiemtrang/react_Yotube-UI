@@ -1,0 +1,28 @@
+.video-thumb {
+    padding: 15px 0;
+    cursor: pointer;
+    
+    &__img img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+
+    p {
+        padding-bottom: 10px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    span {
+        color: $second-color;
+    }
+
+    &__channel {
+        font-size: 15px;
+        i {
+            margin-top: 3px;
+            margin-left: 5px;
+        }
+    }
+}
